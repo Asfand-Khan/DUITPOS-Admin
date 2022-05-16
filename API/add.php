@@ -31,7 +31,7 @@ if(isset($_POST["create_group"]))
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="groupInsert.php">
+    <form method="POST" action="./groupInsert.php">
         <input type="text" name="groupname">
         <button type="submit" name="create_group">Submit</button>
     </form>

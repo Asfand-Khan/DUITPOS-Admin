@@ -1,5 +1,5 @@
 <?php
-include("API\config.php"); 
+include("./API/config.php"); 
 include("header.php");
  ?>
 
@@ -26,7 +26,7 @@ include("header.php");
       <div class="modal-body">
         <div class="row">
                     <div class="col-lg-10 offset-lg-1">
-                        <form method="post" action="createProduct.php" enctype="multipart/form-data">
+                        <form method="post" action="./API/productInsert.php" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
@@ -197,7 +197,7 @@ include("header.php");
       <div class="modal-body">
         <div class="row">
                     <div class="col-12">
-                        <form method="post" action="API/deptInsert.php">
+                        <form method="POST" action="API/deptInsert.php">
                             <div class="row">
                             <div class="col-12">
                                     <div class="form-group">
@@ -210,7 +210,7 @@ include("header.php");
                 </div>
       </div>
       <div class="modal-footer text-center">
-       <button name="create_dept" class="btn btn-outline shadow-none m-0 px-4 text-uppercase" id="add-btn">Create Department</button>
+       <button name="create_dept" class="btn btn-outline shadow-none m-0 px-4 text-uppercase" id="add-btn" type="submit">Create Department</button>
       </div>
                             </form>
     </div>

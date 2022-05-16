@@ -15,16 +15,15 @@ if(isset($_POST["create_product"]))
 		$online=$_POST["pdonline"];
 		$desc=$_POST["pddesc"];
 		
-		
 	/*Image Uploadig Start*/
-		
+	
 	$path="images/".basename($_FILES["pdimage"]["name"]);
 	$size=$_FILES["pdimage"]["size"];
 		
 	if(move_uploaded_file($_FILES["pdimage"]["tmp_name"],$path))
 	{
-		mysqli_query($con,"Insert Into tbl_customers(cus_name,cus_email,cus_phone,cus_gender,cus_image, cus_address,cus_country,cus_city) 
-		values('$name','$email','$phone','$gender','$path','$address','$country','$city')");
+		mysqli_query($con,"Insert Into producttable(productGroup,productTag,productDepartment,productName,productColor,productImage,productCode,productPrice,productCost,productDescription,productUnit,productOnline) 
+		values('$group','$tag','$dept','$name','$color','$path','#dummycode','$price','$cost','$desc','$unit','$online')");
 	}
 	else
 	{

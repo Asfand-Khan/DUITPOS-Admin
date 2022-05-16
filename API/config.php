@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","db_duitpos");
+$con=mysqli_connect("localhost","root","","duitpos");
 
 
 /*if($con)

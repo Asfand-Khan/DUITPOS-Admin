@@ -17,13 +17,14 @@ if(isset($_POST["create_product"]))
 		
 	/*Image Uploadig Start*/
 	
-	$path="images/".basename($_FILES["pdimage"]["name"]);
+	$path="../images/".basename($_FILES["pdimage"]["name"]);
 	$size=$_FILES["pdimage"]["size"];
 		
 	if(move_uploaded_file($_FILES["pdimage"]["tmp_name"],$path))
 	{
 		mysqli_query($con,"Insert Into producttable(productGroup,productTag,productDepartment,productName,productColor,productImage,productCode,productPrice,productCost,productDescription,productUnit,productOnline) 
 		values('$group','$tag','$dept','$name','$color','$path','#dummycode','$price','$cost','$desc','$unit','$online')");
+		header("location:../product.php");
 	}
 	else
 	{

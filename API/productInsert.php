@@ -8,14 +8,13 @@ if(isset($_POST["create_product"]))
 		$group=$_POST["pdgroup"];
 		$dept=$_POST["pddept"];
 		$tag=$_POST["pdtag"];
-		//$image=$_POST["pdimage"];
 		$cost=$_POST["pdcost"];
 		$price=$_POST["pdprice"];
 		$unit=$_POST["pdunit"];
 		$online=$_POST["pdonline"];
 		$desc=$_POST["pddesc"];
 		
-	/*Image Uploadig Start*/
+	/*Image Uploadig*/
 	
 	$path="../images/".basename($_FILES["pdimage"]["name"]);
 	$size=$_FILES["pdimage"]["size"];

@@ -1,7 +1,3 @@
-<!-- <?php
-echo($_SERVER['REQUEST_URI']);
-?> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,6 +27,8 @@ echo($_SERVER['REQUEST_URI']);
   <div id="app">
     <div class="main-wrapper main-wrapper-1">
       <div class="navbar-bg"></div>
+
+
       <nav class="navbar navbar-expand-lg main-navbar sticky">
         <div class="form-inline mr-auto">
           <ul class="navbar-nav mr-3">
@@ -52,8 +50,7 @@ echo($_SERVER['REQUEST_URI']);
           </ul>
         </div>
         <ul class="navbar-nav navbar-right">
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i>
               <span class="badge headerBadge1">
                 6 </span> </a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
@@ -113,8 +110,7 @@ echo($_SERVER['REQUEST_URI']);
               </div>
             </div>
           </li>
-          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-              class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
+          <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i>
             </a>
             <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
               <div class="dropdown-header">
@@ -124,8 +120,7 @@ echo($_SERVER['REQUEST_URI']);
                 </div>
               </div>
               <div class="dropdown-list-content dropdown-list-icons">
-                <a href="#" class="dropdown-item dropdown-item-unread"> <span
-                    class="dropdown-item-icon bg-primary text-white"> <i class="fas
+                <a href="#" class="dropdown-item dropdown-item-unread"> <span class="dropdown-item-icon bg-primary text-white"> <i class="fas
 												fa-code"></i>
                   </span> <span class="dropdown-item-desc"> Template update is
                     available now! <span class="time">2 Min
@@ -137,16 +132,14 @@ echo($_SERVER['REQUEST_URI']);
                       Sugiharto</b> are now friends <span class="time">10 Hours
                       Ago</span>
                   </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i
-                      class="fas
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-success text-white"> <i class="fas
 												fa-check"></i>
                   </span> <span class="dropdown-item-desc"> <b>Kusnaedi</b> has
                     moved task <b>Fix bug header</b> to <b>Done</b> <span class="time">12
                       Hours
                       Ago</span>
                   </span>
-                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i
-                      class="fas fa-exclamation-triangle"></i>
+                </a> <a href="#" class="dropdown-item"> <span class="dropdown-item-icon bg-danger text-white"> <i class="fas fa-exclamation-triangle"></i>
                   </span> <span class="dropdown-item-desc"> Low disk space. Let's
                     clean it! <span class="time">17 Hours Ago</span>
                   </span>
@@ -162,9 +155,7 @@ echo($_SERVER['REQUEST_URI']);
               </div>
             </div>
           </li>
-          <li class="dropdown"><a href="#" data-toggle="dropdown"
-              class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png"
-                class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
+          <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> <img alt="image" src="assets/img/user.png" class="user-img-radious-style"> <span class="d-sm-none d-lg-inline-block"></span></a>
             <div class="dropdown-menu dropdown-menu-right pullDown">
               <div class="dropdown-title">Hello Sarah Smith</div>
               <a href="profile.html" class="dropdown-item has-icon"> <i class="far
@@ -182,51 +173,12 @@ echo($_SERVER['REQUEST_URI']);
           </li>
         </ul>
       </nav>
-      
+
       <!-- Sidebar Start -->
-      <div class="main-sidebar sidebar-style-2">
-        <aside id="sidebar-wrapper">
-          <div class="sidebar-brand">
-            <a href="index.html"> <img alt="image" src="assets/img/logo.png" class="header-logo" /> <span
-                class="logo-name">DUITPOS</span>
-            </a>
-          </div>
-          <ul class="sidebar-menu">
-            <li class="menu-header"></li>
-            <li class="dropdown active">
-              <a href="index.php" class="nav-link fw-light" id="changetodashboard" onclick="dashboardisactive()"><i class="fas fa-chart-line"></i><span>Dashboard</span></a>
-            </li>
-            <!-- <li class="dropdown">
-              <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="command"></i><span>Apps</span></a>
-              <ul class="dropdown-menu">
-                <li><a class="nav-link" href="chat.html">Chat</a></li>
-                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                <li><a class="nav-link" href="blog.html">Blog</a></li>
-                <li><a class="nav-link" href="calendar.html">Calendar</a></li>
-              </ul>
-            </li> -->
-            <li class="dropdown">
-              <a href="possales.php" class="nav-link fw-light" id="changetopossales" onclick="possalesisactive()"><i class="fas fa-regular fa-store"></i><span>POS (Sales)</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="table.php" class="nav-link fw-light" id="changetotable" onclick="possalesisactive()"><i class="fas fa-table"></i><span>Table</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="purchase.php" class="nav-link fw-light" id="changetopurchase"><i class="fas fa-regular fa-basket-shopping"></i><span>Purchase</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="product.php" class="nav-link fw-light" id="changetoproduct"><i class="fas fa-regular fa-box"></i><span>Product</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="supplier.php" class="nav-link fw-light" id="changetosupplier"><i class="fas fa-boxes-packing"></i><span>Supplier</span></a>
-            </li>
-            <li class="dropdown">
-              <a href="managesales.php" class="nav-link fw-light" id="changetomanagesales"><i class="fas fa-list-check"></i><span>Manage Sales</span></a>
-            </li>
-          </ul>
-        </aside>
-      </div>
+      <?php
+      include("sidebar.php")
+      ?>
       <!-- Sidebar End -->
-      
+
       <!-- Main Content -->
       <div class="main-content">

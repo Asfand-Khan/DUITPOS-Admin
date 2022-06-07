@@ -216,26 +216,6 @@ include("header.php");
 </div>
 <!-- Add Group Modal End -->
 
-<!-- <div class="row mt-2 text-decoration-none">
-    <?php
-    $select = mysqli_query($con, "Select * from producttable");
-    while ($row = mysqli_fetch_array($select)) {
-    ?>
-    <div class="col-3 mb-1">
-        <a href="/product/productdetail/<?php echo ($row['productId']) ?>">
-            <div class="card shadow-none" id="hvr" >
-            <img class="img-fluid" src="assets\img\banner\food.jpg"  alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title txt fw-bold text-center" id="txt-color"><?php echo ($row['productName']) ?></h5>
-                </div>
-            </div>
-        </a>
-    </div>
-    <?php
-    }
-    ?>
-</div> -->
-
 <table class="table table-bordered table-striped text-center">
     <tr>
         <th>ID</th>
